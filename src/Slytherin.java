@@ -5,8 +5,8 @@ public class Slytherin extends Hogwarts {
     private int resourcefulness;
     private int lustForPower;
 
-    public Slytherin(String studentName, int magic,int transgressionDistance, int cunning, int resoluteness, int ambition, int resourcefulness, int lustForPower) {
-        super(studentName, magic,transgressionDistance);
+    public Slytherin(String studentName, int magic, int transgressionDistance, int cunning, int resoluteness, int ambition, int resourcefulness, int lustForPower) {
+        super(studentName, magic, transgressionDistance);
         this.cunning = cunning;
         this.resoluteness = resoluteness;
         this.ambition = ambition;
@@ -64,7 +64,20 @@ public class Slytherin extends Hogwarts {
                 ", жажда власти= " + lustForPower +
                 ' ';
     }
-    public void studentSlytherin(){
-        System.out.println("Слизерин " + getStudentName() + " магия= " + getMagic() + " расстояние трансгрессии= " + getTransgressionDistance() + " решительность= " + resoluteness + " амбициозность= " + ambition +" находчивость= " + resourcefulness + " жажда власти= " + lustForPower);
+
+    //Метод вывода данных о студенте
+    public void studentSlytherin() {
+        System.out.println("Слизерин " + getStudentName() + " магия= " + getMagic() + " расстояние трансгрессии= " + getTransgressionDistance() + " решительность= " + resoluteness + " амбициозность= " + ambition + " находчивость= " + resourcefulness + " жажда власти= " + lustForPower);
+    }
+
+    //Метод сравнения студентов одного факультета
+    public static void studentComparisonSlytherin(Slytherin comparison1, Slytherin comparison2){
+        int student1 = comparison1.getCunning() + comparison1.getResoluteness() + comparison1.getAmbition() + comparison1.getResourcefulness() + comparison1.getLustForPower();
+        int student2 = comparison2.getCunning() + comparison2.getResoluteness() + comparison2.getAmbition() + comparison2.getResourcefulness() + comparison2.getLustForPower();
+        if (student1 > student2){
+            System.out.println(comparison1.getStudentName() + " лучший ученик Слизерина, чем " + comparison2.getStudentName());
+        } else if (student1 < student2) {
+            System.out.println(comparison2.getStudentName() + " лучший ученик Слизерина, чем " + comparison1.getStudentName());
+        }
     }
 }

@@ -25,24 +25,36 @@ public class Main {
 
 
         //Описание Гриффиндорцев
-        harryPotter.studentGriffindor();
-        hermioneGranger.studentGriffindor();
-        ronWeasley.studentGriffindor();
+        harryPotter.studentGryffindor();
+        hermioneGranger.studentGryffindor();
+        ronWeasley.studentGryffindor();
+        System.out.println("****");
 
         //Описание Пуффендуйцев
         zachariaSmith.studentHyfflepuff();
         sedricDiggory.studentHyfflepuff();
         justinFinchFletchley.studentHyfflepuff();
-
+        System.out.println("****");
         //Описание Когтевранцев
         choChang.studentRavenclaw();
         padmaPatil.studentRavenclaw();
         marcusBelby.studentRavenclaw();
-
+        System.out.println("****");
         //Описание Слизеринцев
         dracoMalfoy.studentSlytherin();
         grehemMontegry.studentSlytherin();
         gregoryGoyle.studentSlytherin();
+        System.out.println("****");
+
+        //Сравнение учеников одного факультета
+        Gryffindor.studentСomparisonGryffindor(harryPotter,hermioneGranger);
+        System.out.println("****");
+        Hufflepuff.studentComparisonHufflepuff(zachariaSmith,sedricDiggory);
+        System.out.println("****");
+        Ravenclaw.studentComparisonRavenclaw(choChang,padmaPatil);
+        System.out.println("****");
+        Slytherin.studentComparisonSlytherin(dracoMalfoy,gregoryGoyle);
+
 
     }
 }
