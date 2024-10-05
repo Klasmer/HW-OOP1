@@ -71,10 +71,10 @@ public class Slytherin extends Hogwarts {
     }
 
     //Метод сравнения студентов одного факультета
-    public static void studentComparisonSlytherin(Slytherin comparison1, Slytherin comparison2){
+    public static void studentComparisonSlytherin(Slytherin comparison1, Slytherin comparison2) {
         int student1 = comparison1.getCunning() + comparison1.getResoluteness() + comparison1.getAmbition() + comparison1.getResourcefulness() + comparison1.getLustForPower();
         int student2 = comparison2.getCunning() + comparison2.getResoluteness() + comparison2.getAmbition() + comparison2.getResourcefulness() + comparison2.getLustForPower();
-        if (student1 > student2){
+        if (student1 > student2) {
             System.out.println(comparison1.getStudentName() + " лучший ученик Слизерина, чем " + comparison2.getStudentName());
         } else if (student1 < student2) {
             System.out.println(comparison2.getStudentName() + " лучший ученик Слизерина, чем " + comparison1.getStudentName());

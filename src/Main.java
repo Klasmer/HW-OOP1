@@ -47,18 +47,17 @@ public class Main {
         System.out.println("****");
 
         //Сравнение учеников одного факультета
-        Gryffindor.studentСomparisonGryffindor(harryPotter,hermioneGranger);
+        Gryffindor.studentСomparisonGryffindor(harryPotter, hermioneGranger);
         System.out.println("****");
-        Hufflepuff.studentComparisonHufflepuff(zachariaSmith,sedricDiggory);
+        Hufflepuff.studentComparisonHufflepuff(zachariaSmith, sedricDiggory);
         System.out.println("****");
-        Ravenclaw.studentComparisonRavenclaw(choChang,padmaPatil);
+        Ravenclaw.studentComparisonRavenclaw(choChang, padmaPatil);
         System.out.println("****");
-        Slytherin.studentComparisonSlytherin(dracoMalfoy,gregoryGoyle);
+        Slytherin.studentComparisonSlytherin(dracoMalfoy, gregoryGoyle);
         System.out.println("****");
 
         //Сравнение любых учеников по силе магии и расстоянию трансгрессии
-        Hogwarts.powerOfMagicTransgressionDistance(harryPotter,dracoMalfoy);
-
+        Hogwarts.powerOfMagicTransgressionDistance(harryPotter, dracoMalfoy);
 
 
     }
