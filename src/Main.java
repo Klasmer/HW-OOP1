@@ -54,6 +54,11 @@ public class Main {
         Ravenclaw.studentComparisonRavenclaw(choChang,padmaPatil);
         System.out.println("****");
         Slytherin.studentComparisonSlytherin(dracoMalfoy,gregoryGoyle);
+        System.out.println("****");
+
+        //Сравнение любых учеников по силе магии и расстоянию трансгрессии
+        Hogwarts.powerOfMagicTransgressionDistance(harryPotter,dracoMalfoy);
+
 
 
     }
