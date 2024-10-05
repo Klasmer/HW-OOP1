@@ -5,8 +5,8 @@ public class Slytherin extends Hogwarts {
     private int resourcefulness;
     private int lustForPower;
 
-    public Slytherin(String studentName, int magic,int cunning, int resoluteness, int ambition, int resourcefulness, int lustForPower) {
-        super(studentName, magic);
+    public Slytherin(String studentName, int magic,int transgressionDistance, int cunning, int resoluteness, int ambition, int resourcefulness, int lustForPower) {
+        super(studentName, magic,transgressionDistance);
         this.cunning = cunning;
         this.resoluteness = resoluteness;
         this.ambition = ambition;
@@ -52,5 +52,19 @@ public class Slytherin extends Hogwarts {
 
     public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
+    }
+
+    @Override
+    public String toString() {
+        return "Слизерин " + getStudentName() + ", магия" + getMagic() + ", расстояние трансгрессии=" + getTransgressionDistance() +
+                "хитрость= " + cunning +
+                ", решительность= " + resoluteness +
+                ", амбициозность= " + ambition +
+                ", находчивость= " + resourcefulness +
+                ", жажда власти= " + lustForPower +
+                ' ';
+    }
+    public void studentSlytherin(){
+        System.out.println("Слизерин " + getStudentName() + " магия= " + getMagic() + " расстояние трансгрессии= " + getTransgressionDistance() + " решительность= " + resoluteness + " амбициозность= " + ambition +" находчивость= " + resourcefulness + " жажда власти= " + lustForPower);
     }
 }
